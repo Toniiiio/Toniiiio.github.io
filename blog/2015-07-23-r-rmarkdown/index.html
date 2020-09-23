@@ -11,7 +11,7 @@
 <meta name="keywords" content="minimalist,blog,goa,hugo,developer">
 
 <title>
-  Erlich Bachman - CodeRag 
+  Erlich Bachman - Hello R Markdown 
 </title>
 
 <meta name="generator" content="Hugo 0.73.0" />
@@ -42,20 +42,20 @@
 
 
 <header class="row text-left title">
-  <h1 class="title">CodeRag</h1>
+  <h1 class="title">Hello R Markdown</h1>
 </header>
 <section id="category-pane" class="row meta">
   
   <div class="col-md-12">
     <h6 class="text-left meta">
-        PUBLISHED ON OCT 2, 2016 
+        PUBLISHED ON JUL 23, 2015 
       
       
       
       —
       
       
-      <a class="meta" href="/hugo-goa-demo/categories/articles">ARTICLES</a>
+      <a class="meta" href="/hugo-goa-demo/categories/r">R</a>
       
       
       
@@ -66,11 +66,48 @@
 <section id="content-pane" class="row">
   <div class="col-md-12 text-justify content">
     
-    <p>Notes: This article originally appeared in <a href="http://www.coderag.com/-note-from-the-editor/">CodeRag</a>.</p>
-<p>Code/Rag has always been more than just another online tech blog. We strive to be part of the tech community—serving an essential, fundamental look at what’s going on in the valley. It’s why our tagline is “Know Your Code.” We think a tech news publication should know the basics. Be the source. Get down to brass tacks. We can do that because we’re part of the very ecosystem we’re reporting on. And like any other company in the Silicon Valley community, Code/Rag is an ever-evolving entity.</p>
-<p>Part of Code/Rag’s evolution includes our new investor: Bachmanity Capital. Bachmanity, as of this writing, owns a 50 percent stake in Code/Rag. I want to assure our readers this will in no way affect the quality or integrity of our journalism (it takes more than a couple dollars to shut me up). It simply means we have more funds to chase down the story, more resources to analyze trends and more assurances that when you read Code/Rag, you’ll know your code.</p>
-<p>C.J. Cantwell
-Editor-in-Chief</p>
+    
+
+
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
 
   </div>
 </section>
@@ -84,11 +121,11 @@ Editor-in-Chief</p>
       TAGS:
       
       
-      <a class="meta" href="/hugo-goa-demo/tags/aviato">AVIATO</a>, 
+      <a class="meta" href="/hugo-goa-demo/tags/plot">PLOT</a>, 
       
-      <a class="meta" href="/hugo-goa-demo/tags/bachman">BACHMAN</a>, 
+      <a class="meta" href="/hugo-goa-demo/tags/r-markdown">R MARKDOWN</a>, 
       
-      <a class="meta" href="/hugo-goa-demo/tags/pied-piper">PIED PIPER</a>
+      <a class="meta" href="/hugo-goa-demo/tags/regression">REGRESSION</a>
       
       
       
@@ -127,10 +164,10 @@ Editor-in-Chief</p>
   
   
   
-  <span><a class="menu-item" href="/hugo-goa-demo/"></a></span>
+  <span><a class="menu-item" href="/hugo-goa-demo/blog">blog</a></span>
   
   
-  <span><a class="menu-item" href="https://shenoybr.github.io/hugo-goa-demo/about/"> | next &gt;</a></span>
+  <span><a class="menu-item" href="https://shenoybr.github.io/hugo-goa-demo/blog/second/"> | next &gt;</a></span>
   
   
   <h4 class="text-center"><a class="menu-item" href="https://shenoybr.github.io/hugo-goa-demo/">home</a></h4>

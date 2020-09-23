@@ -1,43 +1,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Tonio Liebrand</title>
-    <link>https://Toniiiio.github.io/tags/</link>
-    <description>Recent content in Tags on Tonio Liebrand</description>
+    <title>Tags on Erlich Bachman</title>
+    <link>https://shenoybr.github.io/hugo-goa-demo/tags/</link>
+    <description>Recent content in Tags on Erlich Bachman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Oct 2016 16:59:13 -0400</lastBuildDate>
     
-        <atom:link href="https://Toniiiio.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://shenoybr.github.io/hugo-goa-demo/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>R</title>
-      <link>https://Toniiiio.github.io/tags/r/</link>
-      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      <title>belson</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/belson/</link>
+      <pubDate>Mon, 03 Oct 2016 16:59:13 -0400</pubDate>
       
-      <guid>https://Toniiiio.github.io/tags/r/</guid>
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/belson/</guid>
       <description></description>
       
       
     </item>
     
     <item>
-      <title>scraping</title>
-      <link>https://Toniiiio.github.io/tags/scraping/</link>
-      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      <title>gavin</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/gavin/</link>
+      <pubDate>Mon, 03 Oct 2016 16:59:13 -0400</pubDate>
       
-      <guid>https://Toniiiio.github.io/tags/scraping/</guid>
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/gavin/</guid>
       <description></description>
       
       
     </item>
     
     <item>
-      <title>sivis</title>
-      <link>https://Toniiiio.github.io/tags/sivis/</link>
-      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      <title>hooli</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/hooli/</link>
+      <pubDate>Mon, 03 Oct 2016 16:59:13 -0400</pubDate>
       
-      <guid>https://Toniiiio.github.io/tags/sivis/</guid>
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/hooli/</guid>
       <description></description>
       
       
@@ -45,10 +45,98 @@
     
     <item>
       <title>about</title>
-      <link>https://Toniiiio.github.io/tags/about/</link>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/about/</link>
       <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
       
-      <guid>https://Toniiiio.github.io/tags/about/</guid>
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/about/</guid>
+      <description></description>
+      
+      
+    </item>
+    
+    <item>
+      <title>aviato</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/aviato/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/aviato/</guid>
+      <description></description>
+      
+      
+    </item>
+    
+    <item>
+      <title>bachman</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/bachman/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/bachman/</guid>
+      <description></description>
+      
+      
+    </item>
+    
+    <item>
+      <title>pied piper</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/pied-piper/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/pied-piper/</guid>
+      <description></description>
+      
+      
+    </item>
+    
+    <item>
+      <title>hardware</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/hardware/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/hardware/</guid>
+      <description></description>
+      
+      
+    </item>
+    
+    <item>
+      <title>ceo</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/ceo/</link>
+      <pubDate>Sat, 01 Oct 2016 16:59:13 -0400</pubDate>
+      
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/ceo/</guid>
+      <description></description>
+      
+      
+    </item>
+    
+    <item>
+      <title>plot</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/plot/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/plot/</guid>
+      <description></description>
+      
+      
+    </item>
+    
+    <item>
+      <title>R Markdown</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/r-markdown/</guid>
+      <description></description>
+      
+      
+    </item>
+    
+    <item>
+      <title>regression</title>
+      <link>https://shenoybr.github.io/hugo-goa-demo/tags/regression/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://shenoybr.github.io/hugo-goa-demo/tags/regression/</guid>
       <description></description>
       
       
