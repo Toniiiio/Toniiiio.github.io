@@ -17,10 +17,9 @@
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://Toniiiio.github.io/blog/sneak-preview-sivis-turning-browser-clicks-intro-reproducible-scraping-code/</guid>
-      <description>Sivis enables you to select data in the browser by clicking on it and then generates r code for you to scrape this data periodically. For a preview see the following video.
+      <description>Sivis enables you to easily scrape data from the web. After the user marks the target data in the browser, r code is generated that enables the user to scrape this data periodically. For a preview see the following video.
 
-I am working on this package for over a year now. Maybe its too early to leave the pre-alpha state, but it guess there is a certain time to put it out there: https://github.com/Toniiiio/sivis.
-How does sivis work?</description>
+I am working on this package for over a year now. Maybe its too early to leave the pre-alpha state, but it guess there is a certain time to put it out there: Github repo.</description>
     </item>
     
   </channel>
