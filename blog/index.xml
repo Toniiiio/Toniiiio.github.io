@@ -19,10 +19,11 @@
       <guid>/blog/sneak-preview-sivis-turning-browser-clicks-intro-reproducible-scraping-code/</guid>
       <description><![CDATA[<p>Sivis enables you to easily scrape data from the web. After the user marks the target data in the browser, r code is generated that enables the user to scrape this data periodically. For a preview see the following video.</p>
 <p><a href="https://www.youtube.com/watch?v=tFZ3os-GoNA"><img src="https://github.com/Toniiiio/Toniiiio.github.io/blob/master/img/youtube.png" alt="Sivis example" /></a></p>
-]]></description>
+]]>
 <p>I am working on this package for over a year now. Maybe its too early to leave the pre-alpha state, but it guess there is a certain time to put it out there: <a href="https://github.com/Toniiiio/sivis" target="_blank">Github repo</a>.</p>
-<div id="the-idea" class="section level4">
-<h4>The idea</h4>
+</description>
+	      <div id="the-idea" class="section level4">
+	<h4>The idea</h4>
 <p>When you learn about web scraping you are usually taught to differentiate between javascript and non-javascript pages and use httr/rvest or (r)selenium. You would either send a single request (httr/rvest) or trigger all requests (RSelenium) related to a web page.
 I think this differentiation is not wrong, but i would propose an alternative view.</p>
 <blockquote>
