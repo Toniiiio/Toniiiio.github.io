@@ -1,83 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Tonio Liebrand</title>
-    <link>https://Toniiiio.github.io/tags/r/</link>
+    <link>/tags/r/</link>
     <description>Recent content in R on Tonio Liebrand</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://Toniiiio.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sneak preview sivis - Turning browser clicks intro reproducible scraping code</title>
-      <link>https://Toniiiio.github.io/blog/sneak-preview-sivis-turning-browser-clicks-intro-reproducible-scraping-code/</link>
+      <link>/blog/sneak-preview-sivis-turning-browser-clicks-intro-reproducible-scraping-code/</link>
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://Toniiiio.github.io/blog/sneak-preview-sivis-turning-browser-clicks-intro-reproducible-scraping-code/</guid>
-      <description>
+      <guid>/blog/sneak-preview-sivis-turning-browser-clicks-intro-reproducible-scraping-code/</guid>
+      <description>Sivis enables you to easily scrape data from the web. After the user marks the target data in the browser, r code is generated that enables the user to scrape this data periodically. For a preview see the following video.
 
-
-&lt;p&gt;Sivis enables you to easily scrape data from the web. After the user marks the target data in the browser, r code is generated that enables the user to scrape this data periodically. For a preview see the following video.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=tFZ3os-GoNA&#34;&gt;&lt;img src=&#34;https://Toniiiio.github.io/img/youtube.png&#34; alt=&#34;Sivis example&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I am working on this package for over a year now. Maybe its too early to leave the pre-alpha state, but it guess there is a certain time to put it out there: &lt;a href=&#34;https://github.com/Toniiiio/sivis&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;
-&lt;div id=&#34;the-idea&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;The idea&lt;/h4&gt;
-&lt;p&gt;When you learn about web scraping you are usually taught to differentiate between javascript and non-javascript pages and use httr/rvest or (r)selenium. You would either send a single request (httr/rvest) or trigger all requests (RSelenium) related to a web page.
-I think this differentiation is not wrong, but i would propose an alternative view.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A website consists on average of 70 requests, only one will yield your target information. Why would you want to load the other 69?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;One might argue that it is not easy to identify the correct request among the ~70 candidates and tideous work to collect the relevant meta data for building GET / POST requests. That is correct, if it is attempted to be done manually. But sivis will assist you to automize this process as much as possible.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;how-does-sivis-work&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;How does sivis work?&lt;/h2&gt;
-&lt;p&gt;Scraping data can be summarized in three steps:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;Identify a request that will return us a document containing the data we attempt to scrape&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Find a path to extract the data from the document&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Schedule, monitor and maintain the scraper&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Sivis well assist you building and monitoring scrapers by automising repetitive steps.&lt;/p&gt;
-&lt;p&gt;This blog post introduces you to the basics of sivis and explains the three points mentioned above in more detail.&lt;/p&gt;
-&lt;div id=&#34;request-identification&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;1. Request identification&lt;/h3&gt;
-&lt;div id=&#34;in-a-nutshell&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;In a nutshell&lt;/h4&gt;
-&lt;p&gt;The identification of the correct request will be performed in a chrome extension. When the user opens a web page in chrome, the browser will automatically perform all required requests related to this webpage. My idea was to interpose this process and check the contents of all server responses for our target data. Moreover, we can save the meta data being used for the requests, like the request header and -body.
-To select the target data the user will be given the possibility to select texts within the browser.&lt;/p&gt;
-&lt;p&gt;Aggregating this information will yield us a rich data set, which will be sufficient to build a scraper from within R.
-This dataset will be transformed to a JSON object and loaded into the clipboard from where it can be accessed in R.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;path-extraction&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;2. Path extraction&lt;/h3&gt;
-&lt;p&gt;In order to find a path to extract the data from a given document, we first have to load the server response in R by building and executing a valid request. We have the data that yielded a successful request from the browser. This data can not be used one to one, but is a great starting point and will yield succesful requests on most web pages that do not prohibit web scraping.&lt;/p&gt;
-&lt;p&gt;Given this request we can download the document containg our target information. In order to find a path we first have to know which kind of document is present. It will be mostly either of type html/xml, a JSON or javascript code containing a JSON.*&lt;/p&gt;
-&lt;p&gt;In case of an html/xml document an xpath will be generated to extract the target information. For JSONS the extraction mechanisms aren´t as powerful as xpath, but a similar path will be generated.&lt;/p&gt;
-&lt;p&gt;At the heart of this step are the function get_xpath_by_tag or get_xpath_by_text. Given an xml/html document the node(s) containing the target data will be identified and then the xpath will be generated “going up the tree” without adding unrelevant data or leaving relevant data behind.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;setting-in-production&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;3. Setting in production&lt;/h3&gt;
-&lt;p&gt;Webpage structures change over time: The relevant request, the related request header or -body, as well as pathes to extract the target data might change. The scrapers have to be updated accordingly.
-To identify failed scrapers a logging framework is required. As the source of errors for scrapers is limited and their occurence highly repetitive, a logging and monitoring framework will be built specific to the needs of web scraping.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;deep-dive&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Deep dive&lt;/h2&gt;
-&lt;p&gt;For more information feel free to contact me directly or check the growing documentation on github.&lt;/p&gt;
-&lt;p&gt;*It might rarely be the case that the target data is stored in unstructured text or the structure is intentionally modified that the document can´t be identified as a JSON or html.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-      
-            <category>R</category>
-      
-            <category>sivis</category>
-      
-            <category>scraping</category>
-      
-      
+I am working on this package for over a year now. Maybe its too early to leave the pre-alpha state, but it guess there is a certain time to put it out there: Github repo.</description>
     </item>
     
   </channel>
