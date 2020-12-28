@@ -17,9 +17,9 @@
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/sneak-preview-sivis-turning-browser-clicks-intro-reproducible-scraping-code/</guid>
-	    <description><![CDATA[this is <b>bold</b>]]></description>
       <description><![CDATA[<p>Sivis enables you to easily scrape data from the web. After the user marks the target data in the browser, r code is generated that enables the user to scrape this data periodically. For a preview see the following video.</p>
 <p><a href="https://www.youtube.com/watch?v=tFZ3os-GoNA"><img src="/img/youtube.png" alt="Sivis example" /></a></p>
+]]></description>
 <p>I am working on this package for over a year now. Maybe its too early to leave the pre-alpha state, but it guess there is a certain time to put it out there: <a href="https://github.com/Toniiiio/sivis" target="_blank">Github repo</a>.</p>
 <div id="the-idea" class="section level4">
 <h4>The idea</h4>
@@ -68,7 +68,6 @@ To identify failed scrapers a logging framework is required. As the source of er
 <p>For more information feel free to contact me directly or check the growing documentation on github.</p>
 <p>*It might rarely be the case that the target data is stored in unstructured text or the structure is intentionally modified that the document can´t be identified as a JSON or html.</p>
 </div>
-	    ]]></description>
     </item>
     
   </channel>
